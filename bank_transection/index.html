@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank transection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body>
+    <header class="bg-teal-100">
+        <h1 class="text-6xl text-center pt-8 pb-8 font-bold">Wellcome my own Bank!</h1>
+    </header>
+    <main>
+        <section class="bg-gray-100 "> 
+            <div class=" grid grid-cols-3 justify-items-center   flex items-center font-semibold ">
+
+                <div class="bg-pink-300 w-80 h-48 rounded-lg mt-16 ml-16">
+                    <h2 class="text-4xl pl-8 pt-6">
+                        Deposit
+                    </h2>
+                    <p class="text-4xl pl-8 pt-6">$ <span id="deposit">00</span></p>
+                </div>
+
+                <div class="bg-red-200 w-80 h-48 rounded-lg mt-16">
+                    <h2 class="text-4xl  pl-8 pt-6">
+                        widraw
+                    </h2>
+                    <p class="text-4xl pl-8 pt-6">$ <span id="widraw">00</span></p>
+                </div>
+
+                <div class="bg-green-300 w-80 h-48 rounded-lg mt-16 mr-16">
+                    <h2 class="text-4xl pl-8 pt-6" >
+                        Balance
+                    </h2>
+                    <p class="text-4xl pl-8 pt-6">$ <span id="Balance">100</span></p>
+                </div>
+            </div>
+</section>
+<section class="bg-gray-100">
+    <div class=" grid grid-cols-2 justify-items-center ml-16 mr-16">
+
+               
+        <div class="bg-cyan-200 w-96 h-48 rounded-lg mt-16 ">
+            <h2 class="text-2xl  pl-8 pt-6 font-bold">
+               Please Deopsit
+            </h2>
+            <input id="deposit-field" class="w-64 rounded ml-8 mt-4 p-2 bg-sky-100 text-purple-900" type="text" placeholder="Enter your money" required>
+            <button id="button-deposit" class=" px-8 py-2 font-bold rounded bg-rose-400 ml-16 mt-4  ">Deposit</button>
+        </div>
+
+        <div class="bg-orange-200 w-96 h-48 rounded-lg mt-16">
+            <h2 class="text-2xl pl-8 pt-6 font-bold" >
+                Plese widraw
+            </h2>
+            <input  id="widraw-field" class=" border-none w-64 rounded ml-8 mt-4 p-2 bg-sky-100 text-purple-700" type="text" placeholder="Enter your money">
+          <button id="button-widraw" class="px-8 py-2 font-bold rounded bg-rose-400 ml-16 mt-4  ">Widraw</button>
+        </div>
+    </div>
+</section>
+    </main>
+    <script src="js/diposit.js" ></script>
+    <!-- <script src="js/widraw.js"></script> -->
+
+</body>
+</html>

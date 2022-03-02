@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handle</title>
+    <style>
+            button{
+                padding: 15px 20px;
+                background-color: rgba(180, 60, 134, 0.966);
+                color: black;
+                border: none;
+                border-radius: 5px;
+                margin-left: 30px;
+            }
+        h1{
+            text-align: center;
+            font-weight: 800;
+            font-size: 80px;
+            color: rgba(14, 88, 88, 0.87);
+        }
+    .card{
+        margin-top: 30px;
+        display: flex;
+        background-color: aquamarine;
+    }
+    .cards{
+        margin-left: 20px;
+        height: 400px;
+        margin-left: ;
+        background-color: aqua;
+        
+
+    }
+    .cards-class{
+
+        border-radius: 40px;
+        background-color: aqua;
+        border: 2px solid red;
+        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="wellcomeText">
+
+        </h1>
+        <input id="input" type="text">
+        <button id="update">Update</button>
+        <button id="change">another text</button>
+        <button onclick="clickmethod()">click me :show</button>
+        <button id="explore">click me :explore</button>
+        <button id="border">click me:boder</button>
+    </header>
+
+    <main>
+        <div class="card">
+            <div id="cardss" class="cards">
+                <h1>
+                    Lorem, ipsum dolor.
+                </h1>
+                <button>lorem</button>
+            </div>
+
+            <div id="cardss" class="cards">
+                <h1>
+                    Lorem, ipsum dolor.
+                </h1>
+                <button>lorem</button>
+            </div>
+
+            <div id="cardss" class="cards">
+                <h1>
+                    Lorem, ipsum dolor.
+                </h1>
+                <button>lorem</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('change').addEventListener('click',function()
+        {
+            const namefield=document.getElementById('input');
+            const showtext=document.getElementById('wellcomeText');
+            showtext.innerHTML=namefield.value;
+            namefield.value='';
+        })
+
+
+        document.getElementById('border').addEventListener('click',function () {
+
+     document.getElementById('cardss').setAttribute('class','cards-class');
+
+    
+     
+ })
+
+
+    </script>
+    <script src="commonEvent.js"></script>
+
+
+
+</body>
+</html>
